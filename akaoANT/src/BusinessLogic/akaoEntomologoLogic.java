@@ -74,10 +74,10 @@ public class akaoEntomologoLogic implements IakaoEntomologo {     //"Refactoriza
                 hormiga.setSexo("Asexual"); 
             } else if (genoma == akaoGenoma.XX) {
                 hormiga.setTipo("HReina"); 
-                hormiga.setSexo("Macho");
+                hormiga.setSexo("Hembra");
             } else if (genoma == akaoGenoma.XY) {
                 hormiga.setTipo("HZángano"); 
-                hormiga.setSexo("Hembra");
+                hormiga.setSexo("Macho");
             }
             System.out.println("Evolución Genética: Ahora es " + hormiga.getTipo() + " (" + hormiga.getSexo() + ")");
         }

@@ -21,11 +21,10 @@ public class akaoDataHelper {
         } catch (Exception e) {
            
         }
-        // 1. Cargar Hormigas
+
         akaoCargarHormigas();
         System.out.println(); 
 
-        // 2. Cargar Alimentos
         akaoCargarAlimentos();
     }
 
@@ -33,9 +32,8 @@ public class akaoDataHelper {
         System.out.println(" [+] Hormigas"); 
         
         akaoHormigaDAO hormigaDAO = new akaoHormigaDAO();
-        String filePath = "storage\\DataFiles\\AntNest.txt"; 
+        String filePath = "akaoANT\\storage\\DataFiles\\AntNest.txt"; 
 
-        // Listas de validación
         List<String> validas = Arrays.asList("HLarva", "HSoldado", "HZángano", "HRastreadora", "HReina", "HObrera");
         String miCaso = "HObrera"; 
 
@@ -71,7 +69,7 @@ public class akaoDataHelper {
         System.out.println(" [+] Alimentos"); 
         
         akaoAlimentoDAO alimentoDAO = new akaoAlimentoDAO();
-        String filePath = "storage\\DataFiles\\AntFood.txt";
+        String filePath = "akaoANT\\storage\\DataFiles\\AntFood.txt";
 
         List<String> validos = Arrays.asList("Nectarívoros", "Carnívoro", "Omnívoro", "Insectívoro", "Herbívoro");
         String miCaso = "Herbívoro"; 
